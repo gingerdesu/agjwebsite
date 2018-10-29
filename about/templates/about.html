@@ -1,11 +1,12 @@
 <!doctype html>
+{% load static %}
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="About | Annie Jiang" content="About Page">
 <title>Annie Jiang | About</title>
-<link href="css/DesignPage2.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="images/small logo-15.png">
+<link href="{% static 'css/design_page.css' %}" rel="stylesheet" type="text/css">
+	<link rel="icon" href="{% static 'small logo-15.png' %}">
 <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Satisfy|Teko|Heebo:300" rel="stylesheet">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
@@ -17,46 +18,46 @@
 		<ul>
 			<li id="about"><a href="About page 2.html" title="About Page 2" class="guide">About</a></li>
 			<li><a href="design page 3.html" title="Design page 2" class="guide">Design</a></li>
-			<li><a href="Home page.html"><img src="images/gingerdesu logo 3-08.png"  alt="Annie Jiang Logo" class="logo"></a></li>
+			<li><a href="{% url 'home' %}"><img src="{% static 'images/gingerdesu logo 3-08.png' %}"  alt="Annie Jiang Logo" class="logo"></a></li>
 			<li><a href="Chemistry home page.html" title="Chemistry Resume" class="guide">Chemistry</a></li>
 			<li><a href="Contacts page.html" title="Contact Us" class="guide">Contacts</a></li>
 		</ul>
 	</nav>
 	</header>
 </div>
-	
-	<div id="title"><img src="images/title guides/titles-05.png" height="1080" class="pagetitle" alt="design"/>
+
+	<div id="title"><img src="{% static 'titles-05.png' %}" height="1080" class="pagetitle" alt="design"/>
 	</div>
 <body>
 <!-- Header content -->
 <header>
- 
-	
+
+
   <!-- Identity details -->
   <section class="container">
 		<h2 class="myNameIs">Hi, my name is Annie.</h2>
 	  <h3>I am a chemist, designer in making, and collector of experiences.</h3>
-	  
-<img src="images/profile pic_files/17265619_1852536981631186_6485115826268536832_n.jpg" alt="sample" width="300px" class="profile" style="float:left;width:30%;height:30%;border:100;">
+
+<img src="{% static 'images/profile pic_files/17265619_1852536981631186_6485115826268536832_n.jpg' %}" alt="sample" width="300px" class="profile" style="float:left;width:30%;height:30%;border:100;">
 	  <p id="quote"><em>"Be thankful for everything that happens in your life; it's all an experience"</em></p>
 		  <hr>
 		 <p>Currently finishing my senior year of Bachelors of Science in Specialized Chemistry and minor in Applied Statistics at the University of Illinois at Urbana Champaign. </p>
 	 <p>I was born in Glendale, California, grew up in Shenyang, China until 7th grade, grew up (part 2) in Southern California, and finally moved to the Midwest for college. Thanks to these experiences, I was able to absorb different lifestyles, morals, views, and social structures and really appreciate the different ways individuals think based on their backgrounds. </p>
 	  <p>Some of the most random skills I have include contributing to <a href="https://www.urbandictionary.com/define.php?term=you%20can%20you%20up" target="_blank">Urban Dictionary</a> and accidentally winning a province-wide trivia competition. Let's chat and learn more about each other!</p>
     <p>&nbsp;</p>
-  
+
   </section>
-  
-  
+
+
 </header>
 <!-- content -->
-<section class="mainContent"> 
+<section class="mainContent">
   <!-- Contact details -->
-  
+
   <!-- Previous experience details -->
  <!-- <section class="section2">
 	  <h2 align="center"><font-size:80px> Where is next?</font></h2>
-    <!-- Replicate the above Div block to add more title and company details --> 
+    <!-- Replicate the above Div block to add more title and company details -->
 	 <!-- <center><img src="images/map-01-01.png" alt="world map" width=1000px class="map" align="middle"></center>
   </section>
   <!-- Links to expore your past projects and download your CV -->

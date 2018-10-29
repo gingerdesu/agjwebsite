@@ -1,5 +1,4 @@
 <!doctype html>
-
 {% load static %}
 <html lang="en" id="pt-main" class="pt-perspective">
 <head>
@@ -31,7 +30,7 @@
   <!--directory-->
   <div class="gallery">
 	  <!--about-->
-    <div class="thumbnail" id="about" onClick="pagedown" data-animation="3"> <a href="About page 2.html"><img src="{% static 'titles-05.png' %}" onmouseover="this.src='{% static 'titles-09.png' %}';" onmouseout="this.src='{% static 'titles-05.png' %}';" alt="" width="1920" class="cards"/></a><!--about-->
+    <div class="thumbnail" id="about" onClick="pagedown" data-animation="3"> <a href="{% url 'about' %}"><img src="{% static 'titles-05.png' %}" onmouseover="this.src='{% static 'titles-09.png' %}';" onmouseout="this.src='{% static 'titles-05.png' %}';" alt="" width="1920" class="cards"/></a><!--about-->
     </div>
 	  <!--design-->
     <div class="thumbnail" id="design"> <a href="Design page 2.html"><img src="{% static 'titles-06.png' %}" onmouseover="this.src='{% static 'titles-10.png' %}';" onmouseout="this.src='{% static 'titles-06.png' %}';" alt="" width="1920" class="cards"/></a>
