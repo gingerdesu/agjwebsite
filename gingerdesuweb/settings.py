@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ["agj-website.appspot.com", "localhost"]
 # Application definition
 
 INSTALLED_APPS = [
+    'home.apps.HomeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

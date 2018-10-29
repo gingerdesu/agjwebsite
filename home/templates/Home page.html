@@ -1,0 +1,51 @@
+<!doctype html>
+
+{% load static %}
+<html lang="en" id="pt-main" class="pt-perspective">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Annie Jiang" content="Home Page">
+<title>Annie Jiang</title>
+<link href="css/homePageStyle.css" rel="stylesheet" type="text/css">
+<link href="PageTransitions/css/animations.css" rel="stylesheet" type="text/css">
+		<link rel="icon" href="{% static small logo-15.png">
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Satisfy|Teko|Heebo:300" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="PageTransitions/js/pagetransitions.js"></script>
+<script src="PageTransitions/js/modernizr.custom.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+            $("body").fadeIn(2000);
+    });
+</script>
+</head>
+<body>
+<!-- Main Container -->
+<div class="container">
+  <!-- Header -->
+  <header class="header"> </header>
+	<!--<img src="{% static profile.png" alt="ANNIE JIANG" width="500">-->
+	<div class="myname"><img src="{% static gingerdesu logo 3-09.png %}" height="600"></div>
+  <!--directory-->
+  <div class="gallery">
+	  <!--about-->
+    <div class="thumbnail" id="about" onClick="pagedown" data-animation="3"> <a href="About page 2.html"><img src="{% static title guides/titles-05.png %}" onmouseover="this.src='{% static title guides/titles-09.png%}';" onmouseout="this.src='{% static 'titles-05.png' %};" alt="" width="1920" class="cards"/></a><!--about-->
+    </div>
+	  <!--design-->
+    <div class="thumbnail" id="design"> <a href="Design page 2.html"><img src="{% static 'titles-06.png' %}" onmouseover="this.src='{% static title guides/titles-10.png';" onmouseout="this.src='{% static 'titles-06.png';" alt="" width="1920" class="cards"/></a>
+      <!--chemistry-->
+    </div>
+    <div class="thumbnail" id="chemistry"> <a href="Chemistry home page.html"><img src="{% static title guides/titles-07.png" onmouseover="this.src='{% static title guides/titles-11.png';" onmouseout="this.src='{% static title guides/titles-07.png';" alt="" width="1920" class="cards"/></a>
+    </div>
+      <!--contact-->
+
+    <div class="thumbnail" id="contacts"> <a href="Portfolio page.html"><img src="{% static title guides/titles-08.png" onmouseover="this.src='{% static title guides/titles-12.png';" onmouseout="this.src='{% static title guides/titles-08.png';" alt="" width="1920" class="cards"/></a>
+    </div>
+  </div>
+  <!--<div class="copyright">&copy;2018 Annie Jiang</div>-->
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
